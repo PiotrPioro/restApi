@@ -1,5 +1,6 @@
 package pl.coderslab.restapi.service;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import pl.coderslab.restapi.entity.Book;
 import pl.coderslab.restapi.repository.BookRepository;
@@ -7,6 +8,7 @@ import pl.coderslab.restapi.repository.BookRepository;
 import java.util.List;
 
 @Service
+@Primary
 public class JpaBookService implements BookService{
 
     private final BookRepository bookRepository;

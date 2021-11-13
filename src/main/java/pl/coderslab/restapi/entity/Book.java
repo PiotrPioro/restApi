@@ -31,6 +31,17 @@ public class Book {
     @NotBlank
     private String type;
 
+    public Book() {}
+
+    public Book(long id, String isbn, String title, String author, String publisher, String type) {
+        this.id = id;
+        this.isbn = isbn;
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
